@@ -1,0 +1,6 @@
+﻿namespace WarehouseDemoApp.Warehouse.Resources.Views.Home
+{
+    public class Index
+    {
+    }
+}

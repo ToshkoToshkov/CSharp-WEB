@@ -1,0 +1,22 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@model string
+@inject IViewLocalizer localizer
+@{
+    ViewData["Title"] = localizer["PageTitle"];
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>@localizer["lblCurrentTime"]: @Model</p>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<button id="dataLoader">Load Data</button>
+<div class="row">
+    <ul id="dataContainer"></ul>
+</div>
+
+@section Scripts
+    {
+        <script src="~/js/ajaxDemo.js"></script>
+}
